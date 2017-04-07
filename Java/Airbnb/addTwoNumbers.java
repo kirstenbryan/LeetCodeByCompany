@@ -24,30 +24,24 @@ public class Solution {
         ListNode currentHead = head;
         
         while(current1 != null || current2 != null) { 
-        
-            sum /= 10;
-            
+            sum /= 10; 
             if(current1 != null) {
                 sum += current1.val;
                 current1 = current1.next;
             }
-            
             if(current2 != null) {
                 sum += current2.val;
                 current2 = current2.next;  
             }
-            
             currentHead.next = new ListNode(sum % 10);
-            currentHead = currentHead.next;
-            
-        }      
+            currentHead = currentHead.next;  
+        }   
         
         if(sum / 10 == 1) {
             currentHead.next = new ListNode(1);
         }
         
-        return head.next;  
-        
+        return head.next;     
     }
     
 }
