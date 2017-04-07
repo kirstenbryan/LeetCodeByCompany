@@ -16,7 +16,6 @@
 public class Solution {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        
         int sum = 0;
         ListNode current1 = l1;
         ListNode current2 = l2;
