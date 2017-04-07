@@ -42,6 +42,7 @@ public class Solution {
         while (!queue.isEmpty()) {
             tail.next=queue.poll();
             tail=tail.next;
+            
             if (tail.next!=null) {
                 queue.add(tail.next);    
             }
