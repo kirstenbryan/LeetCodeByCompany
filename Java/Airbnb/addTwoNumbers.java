@@ -40,7 +40,6 @@ public class Solution {
         if(sum / 10 == 1) {
             currentHead.next = new ListNode(1);
         }
-        
         return head.next;     
     }
     
